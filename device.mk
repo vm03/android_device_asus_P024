@@ -247,16 +247,6 @@ endif
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp/vendor/firmware/cmnlib.b00:recovery/root/vendor/firmware/cmnlib.b00 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/cmnlib.b01:recovery/root/vendor/firmware/cmnlib.b01 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/cmnlib.b02:recovery/root/vendor/firmware/cmnlib.b02 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/cmnlib.b03:recovery/root/vendor/firmware/cmnlib.b03 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/cmnlib.mdt:recovery/root/vendor/firmware/cmnlib.mdt \
-    $(LOCAL_PATH)/twrp/vendor/firmware/keymaster/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/keymaster/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/keymaster/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/keymaster/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03 \
-    $(LOCAL_PATH)/twrp/vendor/firmware/keymaster/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt \
     $(LOCAL_PATH)/twrp/vendor/lib/hw/keystore.msm8916.so:recovery/root/vendor/lib/hw/keystore.msm8916.so \
     $(LOCAL_PATH)/twrp/vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so \
     $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
