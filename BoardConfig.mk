@@ -162,12 +162,12 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 -include vendor/asus/P024/BoardConfigVendor.mk
 
 # TWRP
-#RECOVERY_VARIANT := twrp
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/twrp.fstab
+RECOVERY_VARIANT := twrp
+TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/cryptfs_hw
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/twrp/etc/twrp.fstab
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
-#TW_TARGET_USES_QCOM_BSP := true
-#TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_HAS_NO_REAL_SDCARD := true
@@ -178,4 +178,4 @@ TW_NO_CPU_TEMP := true
 TW_NO_SCREEN_TIMEOUT := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_INCLUDE_L_CRYPTO := true
-TW_USE_TOOLBOX := true
+#TW_USE_TOOLBOX := true

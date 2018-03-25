@@ -247,9 +247,6 @@ endif
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp/vendor/lib/hw/keystore.msm8916.so:recovery/root/vendor/lib/hw/keystore.msm8916.so \
-    $(LOCAL_PATH)/twrp/vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so \
-    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
-
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/twrp,recovery/root)
 
 $(call inherit-product, vendor/asus/P024/P024-vendor.mk)
